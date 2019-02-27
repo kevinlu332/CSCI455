@@ -1,0 +1,54 @@
+ColorList.java
+-----
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Random;
+//IDE: IntelliJ
+//done by Yiwen Lu, USCID 7759761380
+
+public class ColorList {
+
+    public ArrayList<java.awt.Color> colList = new ArrayList<Color>();
+
+    ColorList() {
+        Random rng = new Random();
+        for (int i = 0; i < 256; i++) { // loop 256 times
+            int r = rng.nextInt(255); //get a random number of 0...255
+            int g = rng.nextInt(255);
+            int b = rng.nextInt(255);
+            Color c = new Color(r, g, b); // core line!!!: create a Color c
+            colList.add(c); // add c to the ArrayList
+        }
+    }
+
+
+}
+
+
+ColorStrips.java
+-----
+import javax.swing.*;
+import java.awt.*;
+////IDE: IntelliJ
+//done by Yiwen Lu, USCID 7759761380
+
+public class ColorStrips {
+    public static void main(String[] args) {
+        ColorList cols = new ColorList(); // use of ColorList.java
+        JFrame frame = new JFrame(); //create an outer frame window
+        frame.setLayout(new GridLayout(256, 1)); //256 rows and 1 column
+
+        for (int i = 0; i < 256; i++) {
+            JPanel p = new JPanel();  //create a panel
+            Color c = cols.colList.get(i); //get the color at ArrayList location of i
+            p.setBackground(c); //set the color as the background
+            p.setPreferredSize(new Dimension(100, 4)); //set the size of 100x4
+            frame.add(p);// add the created panel to the frame
+        }
+
+        frame.pack(); // arrange al the panels
+        frame.setVisible(true); //set visible to users
+    }
+
+
+}

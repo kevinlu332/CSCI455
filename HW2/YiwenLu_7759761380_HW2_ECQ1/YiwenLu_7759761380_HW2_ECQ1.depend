@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1528530851 source:c:\c++ files\yiwenlu_7759761380_hw2_ecq1\lu_yiwen_7759761380_ecq1.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+	"Lu_Yiwen_7759761380_ECQ1.h"
+
+1528529935 c:\c++ files\yiwenlu_7759761380_hw2_ecq1\lu_yiwen_7759761380_ecq1.h
+

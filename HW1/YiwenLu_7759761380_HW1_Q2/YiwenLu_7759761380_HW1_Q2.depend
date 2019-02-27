@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1528390073 source:c:\c++ files\yiwenlu_7759761380_hw1_q2\main.cpp
+	<iostream >
+	<cstdlib>
+	<ctime>
+	<math.h>
+

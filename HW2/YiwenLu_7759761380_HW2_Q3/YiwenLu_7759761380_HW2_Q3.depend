@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1528434280 source:c:\c++ files\yiwenlu_7759761380_hw2_q3\main.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+
+1528529590 source:c:\c++ files\yiwenlu_7759761380_hw2_q3\lu_yiwen_7759761380_q3.cpp
+	<iostream>
+	<cmath>
+	<fstream>
+	"Lu_Yiwen_7759761380_Q3.h"
+
+1528529384 c:\c++ files\yiwenlu_7759761380_hw2_q3\lu_yiwen_7759761380_q3.h
+
